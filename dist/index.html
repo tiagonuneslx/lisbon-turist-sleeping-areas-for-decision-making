@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory Page</title>
+
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        main {
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        h1 {
+            color: #343a40;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        li {
+            margin: 15px 0;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        li:hover {
+            transform: scale(1.02);
+            box-shadow: 0 1px 13px rgba(0, 0, 0, 0.15);
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            transition: color 0.3s;
+            font-weight: bold;
+            flex-grow: 1;
+            text-align: left;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        .icon {
+            font-size: 1.2em;
+            margin-left: 10px;
+            color: #007BFF;
+            transition: color 0.3s;
+        }
+
+        li:hover .icon {
+            color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Output Files</h1>
+        <ul id="files">
+            <li><a href="dfSleepByWeekdayMean.csv">dfSleepByWeekdayMean.csv</a><i class="fas fa-chevron-right icon"></i></li>
+            <li><a href="dfTopFreg.csv">dfTopFreg.csv</a><i class="fas fa-chevron-right icon"></i></li>
+            <li><a href="sleeping_cells_heatmap.html">sleeping_cells_heatmap.html</a><i class="fas fa-chevron-right icon"></i></li>
+        </ul>
+    </main>
+</body>
+
+</html>
