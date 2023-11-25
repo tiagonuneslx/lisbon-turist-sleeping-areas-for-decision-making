@@ -1,6 +1,6 @@
 #!/bin/bash
 
-files=$(ls -1 dist)
+files=$(find dist -type f -not -name 'index.html')
 
 cp index.html dist/index.html
 
